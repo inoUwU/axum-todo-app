@@ -1,4 +1,4 @@
-[package]
+# [package]
 name = "axum-todo-app"
 version = "0.1.0"
 edition = "2024"
@@ -12,4 +12,4 @@ tower = { version = "0.5.2", features = ["util", "timeout"] }
 tower-http = { version = "0.6.7", features = ["add-extension", "trace"] }
 tracing = "0.1.43"
 tracing-subscriber = { version = "0.3.22", features = ["env-filter"] }
-uuid = "1.18.1"
+uuid = {version = "1.18.1",features = ["serde", "v4"]}
